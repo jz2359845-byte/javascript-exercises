@@ -21,7 +21,7 @@ describe('repeatString', () => {
   });
   test.skip('does not use the built-in String repeat method', () => {
     /* Even though there is a built-in String repeat method,
-      in this exercise specifically, we want you to practise using loops */
+      in this exercise specifically, we want you to practice using loops */
     jest.spyOn(String.prototype, 'repeat').mockName('Built-in String repeat method');
     repeatString("don't use the built-in repeat method!", 1);
     expect(String.prototype.repeat).not.toHaveBeenCalled();
